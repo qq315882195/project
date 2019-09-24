@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Apr 19 14:22:02 CST 2019
+maven-install-plugin-2.5.2.pom>nexus=
+maven-install-plugin-2.5.2.jar>nexus=
+maven-install-plugin-2.5.2.jar>central=
+maven-install-plugin-2.5.2.pom>central=

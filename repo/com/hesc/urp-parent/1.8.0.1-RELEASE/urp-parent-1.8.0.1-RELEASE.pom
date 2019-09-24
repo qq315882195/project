@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hesc</groupId>
+  <artifactId>urp-parent</artifactId>
+  <version>1.8.0.1-RELEASE</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+  	<module>urp-core</module>
+  	<module>urp-web</module>
+  </modules>
+  
+  <properties>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<mybatis.version>3.3.0</mybatis.version>
+		<slf4j.version>1.7.12</slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+		<mybatis-spring.version>1.2.3</mybatis-spring.version>
+		<mysql-connector-java.version>5.1.35</mysql-connector-java.version>
+		<junit.version>4.12</junit.version>
+		<druid.version>1.0.14</druid.version>
+		<jackson.version>2.5.1</jackson.version>
+		<aspectjweaver.version>1.8.6</aspectjweaver.version>
+		<shiro.version>1.2.3</shiro.version>
+		<crazycake.version>2.4.2.1-RELEASE</crazycake.version>
+		<fileupload.version>1.3.1</fileupload.version>
+		<fastjson.version>1.1.37</fastjson.version>
+		<asm.version>3.3.1</asm.version>
+		<xmlschema-core.version>2.2.1</xmlschema-core.version>
+		<wsdl4j.version>1.6.3</wsdl4j.version>
+		<neethi.version>3.0.3</neethi.version>
+		<cxf-api.version>2.7.11</cxf-api.version>
+		<validation-api.version>1.1.0.Final</validation-api.version>
+		<hibernate-validator.version>5.2.0.Final</hibernate-validator.version>
+		<taglibs.version>1.1.2</taglibs.version>
+		<jstl.version>1.2</jstl.version>
+		<commons-collections.version>3.2.1</commons-collections.version>
+		<commons-lang>2.6</commons-lang>
+		<servlet.version>3.0.1</servlet.version>
+		<trundle.version>3.2.5-RELEASE</trundle.version>
+		<trundle.web.version>3.2.6.1-RELEASE</trundle.web.version>
+		<trundle.funmonitor.version>3.2.6-RELEASE</trundle.funmonitor.version>
+		<poi.version>3.9</poi.version>
+		<ojdbc14.version>10.2.0.4.0</ojdbc14.version>
+		
+	</properties>  
+	
+	<dependencies>
+	
+		<!-- 部署依赖 --> 
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<!-- 开发依赖 -->
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>${junit.version}</version>
+	      <scope>test</scope>
+	    </dependency> 
+	    <dependency>
+	        <groupId>javax.servlet</groupId>
+	        <artifactId>javax.servlet-api</artifactId>
+	        <version>${servlet.version}</version>
+	        <scope>provided</scope>
+	    </dependency>
+	</dependencies>
+	
+	<distributionManagement>
+		<repository>
+			<id>pro-release</id>
+			<name>Proj Release Repository</name>
+			<url>http://192.168.1.14:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>pro-snapshot</id>
+			<name>Proj Snapshot Repository</name>
+			<url>http://192.168.1.14:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<build>
+    <plugins>
+    		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+            <plugin>  
+                <artifactId>maven-source-plugin</artifactId>  
+                <version>2.1</version>  
+                <configuration>  
+                    <attach>true</attach>  
+                    <encoding>UTF-8</encoding>
+                </configuration>  
+                <executions>  
+                    <execution>  
+                        <phase>compile</phase>  
+                        <goals>  
+                            <goal>jar</goal>  
+                        </goals>  
+                    </execution>  
+                </executions>  
+            </plugin> 
+            <plugin>
+			<artifactId>maven-jar-plugin</artifactId>
+			<configuration>					
+				<classesDirectory>target/classes/</classesDirectory>
+				<archive>
+					<addMavenDescriptor>false</addMavenDescriptor>
+				</archive>
+			</configuration>
+		</plugin>           
+		</plugins>
+	</build>
+</project>

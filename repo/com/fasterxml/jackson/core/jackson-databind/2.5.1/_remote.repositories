@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed May 08 16:54:07 CST 2019
+jackson-databind-2.5.1.jar>nexus=
+jackson-databind-2.5.1-sources.jar>nexus=
+jackson-databind-2.5.1.pom>nexus=

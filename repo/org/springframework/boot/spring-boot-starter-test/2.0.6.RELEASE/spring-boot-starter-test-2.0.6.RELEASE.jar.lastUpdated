@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 28 16:31:36 CST 2019
+@default-nexus-http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/.lastUpdated=1561710696188
+http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/.error=Could not transfer artifact org.springframework.boot\:spring-boot-starter-test\:jar\:2.0.6.RELEASE from/to nexus (http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/)\: The operation was cancelled.

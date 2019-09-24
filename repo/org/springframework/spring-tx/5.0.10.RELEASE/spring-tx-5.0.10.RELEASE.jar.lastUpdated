@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jun 28 16:31:36 CST 2019
+@default-nexus-http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/.lastUpdated=1561710696132
+http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/.error=Could not transfer artifact org.springframework\:spring-tx\:jar\:5.0.10.RELEASE from/to nexus (http\://192.168.1.14\:8081/nexus/content/groups/HescRepository/)\: The operation was cancelled.
